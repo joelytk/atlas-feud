@@ -15,8 +15,157 @@ import WinnerScreen from '../screens/WinnerScreen';
 
 import AnswerType from '../types/Answer';
 
+const data = [
+	{
+		id: 1,
+		question:
+			'If men got pregnant, what part of pregnancy would they whine about more than women?',
+		answers: [
+			{
+				id: 1,
+				answer: 'pains/labor',
+				acceptedAnswers: [
+					'pain',
+					'pains',
+					'labor pains',
+					'labor',
+					'giving birth'
+				],
+				score: 52
+			},
+			{
+				id: 2,
+				answer: 'getting porky',
+				acceptedAnswers: [
+					'getting fat',
+					'becoming fat',
+					'fat',
+					'getting big',
+					'becoming big'
+				],
+				score: 15
+			},
+			{
+				id: 3,
+				answer: 'morning sickness',
+				acceptedAnswers: [
+					'morning sickness',
+					'feeling sick',
+					'getting sick',
+					'sick',
+					'feeling unwell',
+					'unwell'
+				],
+				score: 13
+			},
+			{
+				id: 4,
+				answer: "tired/can't sleep",
+				acceptedAnswers: [
+					'tired',
+					"can't sleep",
+					'difficulty sleeping',
+					'unable to sleep',
+					'fatigue',
+					'fatigued'
+				],
+				score: 4
+			},
+			{
+				id: 5,
+				answer: 'endless peeing',
+				acceptedAnswers: [
+					'endless peeing',
+					'always peeing',
+					'need to pee',
+					'needing to pee'
+				],
+				score: 4
+			},
+			{
+				id: 6,
+				answer: 'mood swings/crying',
+				acceptedAnswers: [
+					'mood swings',
+					'crying',
+					'emotionally unstable',
+					'emotional'
+				],
+				score: 3
+			},
+			{
+				id: 7,
+				answer: 'everything',
+				acceptedAnswers: ['everything', 'anything'],
+				score: 3
+			},
+			{
+				id: 8,
+				answer: 'cravings',
+				acceptedAnswers: [
+					'cravings',
+					'craving',
+					'hungry',
+					'always hungry',
+					'feeling hungry'
+				],
+				score: 2
+			}
+		]
+	},
+	{
+		id: 2,
+		question:
+			"Name something you don't stick your finger in, at least when someone's looking at you",
+		answers: [
+			{
+				id: 1,
+				answer: 'booger bakery',
+				acceptedAnswers: ['nose'],
+				score: 66
+			},
+			{
+				id: 2,
+				answer: 'mouth/pie hole',
+				acceptedAnswers: ['mouth', 'pie hole'],
+				score: 13
+			},
+			{
+				id: 3,
+				answer: 'bowel canal',
+				acceptedAnswers: ['asshole', 'butthole', 'ass', 'butt'],
+				score: 8
+			},
+			{
+				id: 4,
+				answer: 'food/peanut butter',
+				acceptedAnswers: ['food', 'jar of food', 'peanut butter'],
+				score: 7
+			},
+			{
+				id: 5,
+				answer: 'undies/pants',
+				acceptedAnswers: [
+					'undies',
+					'underwear',
+					'bra',
+					'panties',
+					'pants',
+					'trousers'
+				],
+				score: 2
+			},
+			{
+				id: 6,
+				answer: 'ear',
+				acceptedAnswers: ['ear', 'ears'],
+				score: 2
+			}
+		]
+	}
+];
+
 const Board = () => {
-	const [data, setData] = useState([]);
 	const [survey, setSurvey] = useState({
 		id: 0,
 		question: '',
@@ -39,19 +188,7 @@ const Board = () => {
 	const [isSteal, setIsSteal] = useState(false);
 
 	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const res = await fetch('/surveys.json');
-				const data = await res.json();
-				const survey = await data[questionIndex];
-				setData(data);
-				setSurvey(survey);
-			} catch (error) {
-				console.error({ error });
-			}
-		};
-
-		fetchData();
+		setSurvey(data[questionIndex]);
 	}, []);
 
 	const handleNext = () => {
