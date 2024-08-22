@@ -63,6 +63,10 @@ const Board = ({ setWinner }) => {
 
   // const loadAnswers = () => {};
 
+  // TODO: play intro on game end
+  // TODO: test all scenarios
+  // TODO: flip all answers first before moving on to next question
+
   const nextQuestion = () => {
     setCompleted([]);
     setSurvey(data[1]);
