@@ -1,34 +1,147 @@
-{
-  "season23": [
-    {
-      "id": 1,
-      "episode": 1,
-      "question": "Name a sign that your girlfriend might be turning into a cat.",
-      "answers": [
-        { "id": 1, "answer": "Meows/purrs", "score": 37 },
-        { "id": 2, "answer": "Claws/scratches", "score": 21 },
-        { "id": 3, "answer": "Grew whiskers", "score": 18 },
-        { "id": 4, "answer": "Grew a tail", "score": 10 },
-        { "id": 5, "answer": "Eats friskies", "score": 4 },
-        { "id": 6, "answer": "Hisses", "score": 4 },
-        { "id": 7, "answer": "Getting furry", "score": 4 },
-        { "id": 8, "answer": "Uses litter box", "score": 2 }
-      ]
-    },
-    {
-      "id": 2,
-      "episode": 2,
-      "question": "Name something you're embarrassed to admit you still do in the bathtub like a little kid.",
-      "answers": [
-        { "id": 1, "answer": "Play with bubbles", "score": 34 },
-        { "id": 2, "answer": "Let one rip", "score": 24 },
-        { "id": 3, "answer": "Toys/duckies", "score": 12 },
-        { "id": 4, "answer": "Splash", "score": 9 },
-        { "id": 5, "answer": "Sing", "score": 8 },
-        { "id": 6, "answer": "Pee/turn it yellow", "score": 6 },
-        { "id": 7, "answer": "Swim/go under", "score": 5 },
-        { "id": 8, "answer": "Crazy hairstyles", "score": 2 }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "question": "If men got pregnant, what part of pregnancy would they whine about more than women?",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "pains/labor",
+        "acceptedAnswers": [
+          "pain",
+          "pains",
+          "labor pains",
+          "labor",
+          "giving birth"
+        ],
+        "score": 52
+      },
+      {
+        "id": 2,
+        "answer": "getting porky",
+        "acceptedAnswers": [
+          "getting fat",
+          "becoming fat",
+          "fat",
+          "getting big",
+          "becoming big"
+        ],
+        "score": 15
+      },
+      {
+        "id": 3,
+        "answer": "morning sickness",
+        "acceptedAnswers": [
+          "morning sickness",
+          "feeling sick",
+          "getting sick",
+          "sick",
+          "feeling unwell",
+          "unwell"
+        ],
+        "score": 13
+      },
+      {
+        "id": 4,
+        "answer": "tired/can't sleep",
+        "acceptedAnswers": [
+          "tired",
+          "can't sleep",
+          "difficulty sleeping",
+          "unable to sleep",
+          "fatigue",
+          "fatigued"
+        ],
+        "score": 4
+      },
+      {
+        "id": 5,
+        "answer": "endless peeing",
+        "acceptedAnswers": [
+          "endless peeing",
+          "always peeing",
+          "need to pee",
+          "needing to pee"
+        ],
+        "score": 4
+      },
+      {
+        "id": 6,
+        "answer": "mood swings/crying",
+        "acceptedAnswers": [
+          "mood swings",
+          "crying",
+          "emotionally unstable",
+          "emotional"
+        ],
+        "score": 3
+      },
+      {
+        "id": 7,
+        "answer": "everything",
+        "acceptedAnswers": ["everything", "anything"],
+        "score": 3
+      },
+      {
+        "id": 8,
+        "answer": "cravings",
+        "acceptedAnswers": [
+          "cravings",
+          "craving",
+          "hungry",
+          "always hungry",
+          "feeling hungry"
+        ],
+        "score": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Name something you don't stick your finger in, at least when someone's looking at you",
+    "answers": [
+      {
+        "id": 1,
+        "answer": "booger bakery",
+        "acceptedAnswers": ["nose"],
+        "score": 66
+      },
+      {
+        "id": 2,
+        "answer": "mouth/pie hole",
+        "acceptedAnswers": ["mouth", "pie hole"],
+        "score": 13
+      },
+      {
+        "id": 3,
+        "answer": "bowel canal",
+        "acceptedAnswers": ["asshole", "butthole", "ass", "butt"],
+        "score": 8
+      },
+      {
+        "id": 4,
+        "answer": "food/peanut butter",
+        "acceptedAnswers": ["food", "jar of food", "peanut butter"],
+        "score": 7
+      },
+      {
+        "id": 5,
+        "answer": "undies/pants",
+        "acceptedAnswers": [
+          "undies",
+          "underwear",
+          "bra",
+          "panties",
+          "pants",
+          "trousers"
+        ],
+        "score": 2
+      },
+      {
+        "id": 6,
+        "answer": "ear",
+        "acceptedAnswers": ["ear", "ears"],
+        "score": 2
+      }
+    ]
+  }
+]

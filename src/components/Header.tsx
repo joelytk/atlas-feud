@@ -1,6 +1,6 @@
-const Header = ({ question }) => {
+const Header = ({ question, onClick }) => {
   return (
-    <header>
+    <header onClick={onClick}>
       <h1>{question}</h1>
     </header>
   );
