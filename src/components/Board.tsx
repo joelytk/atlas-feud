@@ -4,7 +4,6 @@ import AnswerGrid from './AnswerGrid';
 import ArrowRightIcon from './ArrowRightIcon';
 import Avatar from './Avatar';
 import Footer from './Footer';
-import Header from './Header';
 import ScoreCounter from './ScoreCounter';
 import Strike from './Strike';
 
@@ -321,7 +320,7 @@ const Board = () => {
 					setActiveTeam={setActiveTeam}
 				/>
 				<div className='container'>
-					<Header question={survey.question} />
+					{/* <Header question={survey.question} /> */}
 					<main>
 						<ScoreCounter score={score} />
 						<AnswerGrid
