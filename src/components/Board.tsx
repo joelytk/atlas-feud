@@ -4,6 +4,7 @@ import AnswerGrid from './AnswerGrid';
 import ArrowRightIcon from './ArrowRightIcon';
 import Avatar from './Avatar';
 import Footer from './Footer';
+import Header from './Header';
 import ScoreCounter from './ScoreCounter';
 import Strike from './Strike';
 
@@ -11,6 +12,7 @@ import useAudio from '../hooks/useAudio';
 
 import SplashScreen from '../screens/SplashScreen';
 import WinnerScreen from '../screens/WinnerScreen';
+
 import AnswerType from '../types/Answer';
 
 const Board = () => {
@@ -72,6 +74,14 @@ const Board = () => {
 		setIsSteal(false);
 	};
 
+	const playRoundWinSound = () => {
+		const timeout = setTimeout(() => {
+			playSound('round-win');
+		}, 2000);
+
+		return () => clearTimeout(timeout);
+	};
+
 	const checkIfRoundHasEnded = (completed: number[], status: string) => {
 		if (
 			!isSteal &&
@@ -80,14 +90,14 @@ const Board = () => {
 		) {
 			setIsRoundEnded(true);
 			assignScore(score, activeTeam);
-			playSound('round-win');
+			playRoundWinSound();
 		} else if (isSteal && status === 'correct') {
 			setIsRoundEnded(true);
-			playSound('round-win');
+			playRoundWinSound();
 			assignScore(score, activeTeam);
 		} else if (isSteal && status === 'wrong') {
 			setIsRoundEnded(true);
-			playSound('round-win');
+			playRoundWinSound();
 			assignScore(score, activeTeam === 1 ? 2 : 1);
 		}
 	};
@@ -174,6 +184,7 @@ const Board = () => {
 					setActiveTeam={setActiveTeam}
 				/>
 				<div className='container'>
+					<Header question={survey.question} />
 					<main>
 						<ScoreCounter score={score} />
 						<AnswerGrid
