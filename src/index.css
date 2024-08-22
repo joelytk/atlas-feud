@@ -1,379 +1,392 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  font-family: 'Bebas Neue', sans-serif;
-  color: #fff;
-  letter-spacing: 1px;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Bebas Neue', sans-serif;
+	color: #fff;
+	letter-spacing: 1px;
 }
 
 body {
-  background-color: #0f0f4a;
+	background-color: #0f0f4a;
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: 500;
+	font-size: 2rem;
+	font-weight: 500;
 }
 
 button {
-  border: 2px solid #0e69b2;
-  background-color: #023f94;
-  color: #fff;
-  padding: 0.5rem;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  width: 70px;
-  height: 58px;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	border: 2px solid #0e69b2;
+	background-color: #023f94;
+	color: #fff;
+	padding: 0.5rem;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	width: 70px;
+	height: 58px;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 button:hover {
-  background-color: #0554c1;
+	background-color: #0554c1;
+}
+
+.fab {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	z-index: 1;
+}
+
+.fab svg {
+	width: 32px;
+	height: 32px;
+	fill: #fff;
 }
 
 header,
 footer {
-  background-color: #031b39;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 0 0 12px 12px;
-  border: 4px solid #205a75;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
-    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+	background-color: #031b39;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 0 0 12px 12px;
+	border: 4px solid #205a75;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+		rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 }
 
 header {
-  border-radius: 0 0 12px 12px;
-  border-top: 0;
+	border-radius: 0 0 12px 12px;
+	border-top: 0;
 }
 
 main {
-  flex: 1;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-bottom: 4rem;
+	flex: 1;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-bottom: 4rem;
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border-radius: 12px 12px 0 0;
-  border-bottom: 0;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	border-radius: 12px 12px 0 0;
+	border-bottom: 0;
 }
 
 footer form {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 footer input {
-  flex: 1;
-  color: #000;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 0.5rem;
-  font-size: 2rem;
-  font-weight: 500;
-  outline: none;
-  border-radius: 0.5rem;
-  border: none;
+	flex: 1;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0.5rem;
+	font-size: 2rem;
+	font-weight: 500;
+	outline: none;
+	border-radius: 0.5rem;
+	border: none;
 }
 
 audio {
-  display: none;
+	display: none;
 }
 
 .splash-screen {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  background-color: #000285;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: #000285;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .splash-screen img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .spin {
-  animation: spin linear 5s infinite;
-  perspective: 1000px;
-  transform-style: preserve-3d;
+	animation: spin linear 5s infinite;
+	perspective: 1000px;
+	transform-style: preserve-3d;
 }
 
 .slide-up {
-  animation: slideUp linear 1s forwards;
+	animation: slideUp linear 1s forwards;
 }
 
 .board {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	height: 100vh;
 }
 
 .avatar-container {
-  margin: 4.8rem auto;
+	margin: 4.8rem auto;
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 0.5rem;
-  object-fit: cover;
-  background-color: #040d69;
-  border: 4px solid #0e63a1;
+	width: 120px;
+	height: 120px;
+	border-radius: 0.5rem;
+	object-fit: cover;
+	background-color: #040d69;
+	border: 4px solid #0e63a1;
 }
 
 .avatar.active {
-  border: 4px solid #ffde02;
+	border: 4px solid #ffde02;
 }
 
 .team-score {
-  font-size: 2rem;
-  text-align: center;
+	font-size: 2rem;
+	text-align: center;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 16px;
+	display: flex;
+	flex-direction: column;
+	padding: 0 16px;
 }
 
 .score-counter {
-  text-align: center;
-  width: 180px;
-  height: 100px;
-  background-color: rgba(17, 76, 240, 0.5);
-  line-height: 80px;
-  margin: 0 auto;
-  font-size: 4rem;
-  font-weight: 600;
-  border: 0.75rem solid #40489d;
-  border-radius: 0.5rem;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
-    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+	text-align: center;
+	width: 180px;
+	height: 100px;
+	background-color: rgba(17, 76, 240, 0.5);
+	line-height: 80px;
+	margin: 0 auto;
+	font-size: 4rem;
+	font-weight: 600;
+	border: 0.75rem solid #40489d;
+	border-radius: 0.5rem;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+		rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 }
 
 .answer-grid-wrapper {
-  border: 4px solid #ffde02;
-  border-radius: 0.5rem;
+	border: 4px solid #ffde02;
+	border-radius: 0.5rem;
 }
 
 .answer-grid {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .answer-item__front {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-  background-image: linear-gradient(#5b8ee8, #093cc2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	text-align: center;
+	background-image: linear-gradient(#5b8ee8, #093cc2);
 }
 
 .answer-item__number {
-  width: 48px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #0a2d7d;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 40px;
-  text-shadow: 2px 2px #000;
-  margin: 0 auto;
-  border: 2px solid #4f70d0;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
-    rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+	width: 48px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #0a2d7d;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 40px;
+	text-shadow: 2px 2px #000;
+	margin: 0 auto;
+	border: 2px solid #4f70d0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px,
+		rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
 }
 
 .answer-item {
-  background-color: transparent;
-  height: 48px;
-  perspective: 1000px;
-  border: 1px solid #fff;
+	background-color: transparent;
+	height: 48px;
+	perspective: 1000px;
+	border: 1px solid #fff;
 }
 
 .answer-item__inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .answer-item.completed .answer-item__inner {
-  transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
 }
 
 .answer-item__front,
 .answer-item__back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .answer-item:nth-last-child(-n + 4) {
-  border-left: 0;
+	border-left: 0;
 }
 
 .answer-item__back {
-  display: flex;
-  background-color: #2980b9;
-  color: white;
-  transform: rotateX(180deg);
+	display: flex;
+	background-color: #2980b9;
+	color: white;
+	transform: rotateX(180deg);
 }
 
 .answer-item__answer {
-  flex: 1;
-  text-align: center;
-  line-height: 48px;
-  background-color: #013ea3;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 500;
-  text-shadow: 2px 2px #000;
+	flex: 1;
+	text-align: center;
+	line-height: 48px;
+	background-color: #013ea3;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: 500;
+	text-shadow: 2px 2px #000;
 }
 
 .answer-item__score {
-  width: 48px;
-  min-width: 48px;
-  line-height: 48px;
-  text-align: center;
-  background-image: linear-gradient(#5b8ee8, #093cc2);
-  border-left: 1px solid #fff;
-  font-size: 2rem;
-  font-weight: 500;
-  text-shadow: 2px 2px #000;
+	width: 48px;
+	min-width: 48px;
+	line-height: 48px;
+	text-align: center;
+	background-image: linear-gradient(#5b8ee8, #093cc2);
+	border-left: 1px solid #fff;
+	font-size: 2rem;
+	font-weight: 500;
+	text-shadow: 2px 2px #000;
 }
 
 .arrow-up-icon {
-  width: 28px;
-  height: 28px;
-  fill: #fff;
+	width: 28px;
+	height: 28px;
+	fill: #fff;
 }
 
 .strike-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 }
 
 .strike-container {
-  width: 16rem;
-  height: auto;
-  animation: grow 0.5s;
+	width: 16rem;
+	height: auto;
+	animation: grow 0.5s;
 }
 
 .strike-indicator {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .winner-screen {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 100;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	animation: fadeIn 1s forwards;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+	from {
+		opacity: 0;
+	}
 
-  to {
-    opacity: 1;
-  }
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
+	from {
+		transform: rotateY(0deg);
+	}
 
-  to {
-    transform: rotateY(360deg);
-  }
+	to {
+		transform: rotateY(360deg);
+	}
 }
 
 @keyframes grow {
-  0% {
-    transform: scale(0);
-  }
+	0% {
+		transform: scale(0);
+	}
 
-  50% {
-    transform: scale(1);
-  }
+	50% {
+		transform: scale(1);
+	}
 
-  75% {
-    transform: scale(0.8);
-  }
+	75% {
+		transform: scale(0.8);
+	}
 
-  100% {
-    transform: scale(1);
-  }
+	100% {
+		transform: scale(1);
+	}
 }
 
 @keyframes slideUp {
-  from {
-    transform: translateY(0);
-  }
+	from {
+		transform: translateY(0);
+	}
 
-  to {
-    transform: translateY(-100%);
-  }
+	to {
+		transform: translateY(-100%);
+	}
 }
 
 @keyframes firework {
-  0% {
-    transform: translate(var(--x), var(--initialY));
-    width: var(--initialSize);
-    opacity: 1;
-  }
-  50% {
-    width: 0.5vmin;
-    opacity: 1;
-  }
-  100% {
-    width: var(--finalSize);
-    opacity: 0;
-  }
+	0% {
+		transform: translate(var(--x), var(--initialY));
+		width: var(--initialSize);
+		opacity: 1;
+	}
+	50% {
+		width: 0.5vmin;
+		opacity: 1;
+	}
+	100% {
+		width: var(--finalSize);
+		opacity: 0;
+	}
 }
 
 /* @keyframes fireworkPseudo {
@@ -385,133 +398,133 @@ audio {
 .firework,
 .firework::before,
 .firework::after {
-  --initialSize: 0.5vmin;
-  --finalSize: 45vmin;
-  --particleSize: 0.2vmin;
-  --color1: yellow;
-  --color2: khaki;
-  --color3: white;
-  --color4: lime;
-  --color5: gold;
-  --color6: mediumseagreen;
-  --y: -30vmin;
-  --x: -50%;
-  --initialY: 60vmin;
-  content: '';
-  animation: firework 2s infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, var(--y));
-  width: var(--initialSize);
-  aspect-ratio: 1;
-  background: 
+	--initialSize: 0.5vmin;
+	--finalSize: 45vmin;
+	--particleSize: 0.2vmin;
+	--color1: yellow;
+	--color2: khaki;
+	--color3: white;
+	--color4: lime;
+	--color5: gold;
+	--color6: mediumseagreen;
+	--y: -30vmin;
+	--x: -50%;
+	--initialY: 60vmin;
+	content: '';
+	animation: firework 2s infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, var(--y));
+	width: var(--initialSize);
+	aspect-ratio: 1;
+	background: 
     /*
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 0%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 0%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 100% 100%,
     radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 0% 100%,
     */ radial-gradient(
-        circle,
-        var(--color1) var(--particleSize),
-        #0000 0
-      )
-      50% 0%,
-    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
-    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
-    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
-    /* bottom right */
-      radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80%
-      90%,
-    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
-    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 90% 70%,
-    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%,
-    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
-    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
-    /* bottom left */
-      radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22%
-      90%,
-    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
-    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 70%,
-    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 10% 60%,
-    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%,
-    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
-    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
-    /* top left */
-      radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80%
-      10%,
-    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
-    radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 90% 23%,
-    radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 100% 43%,
-    radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%,
-    radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
-    radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
-    /* top right */
-      radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22%
-      14%,
-    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%,
-    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 34%,
-    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 10% 29%,
-    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 31% 37%,
-    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 28% 7%,
-    radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 13% 42%;
-  background-size: var(--initialSize) var(--initialSize);
-  background-repeat: no-repeat;
+				circle,
+				var(--color1) var(--particleSize),
+				#0000 0
+			)
+			50% 0%,
+		radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 50%,
+		radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 50% 100%,
+		radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 0% 50%,
+		/* bottom right */
+			radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 80%
+			90%,
+		radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 95% 90%,
+		radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 90% 70%,
+		radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 100% 60%,
+		radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 55% 80%,
+		radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 70% 77%,
+		/* bottom left */
+			radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 22%
+			90%,
+		radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 45% 90%,
+		radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 70%,
+		radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 10% 60%,
+		radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 31% 80%,
+		radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 28% 77%,
+		radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 13% 72%,
+		/* top left */
+			radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 80%
+			10%,
+		radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 95% 14%,
+		radial-gradient(circle, var(--color2) var(--particleSize), #0000 0) 90% 23%,
+		radial-gradient(circle, var(--color3) var(--particleSize), #0000 0) 100% 43%,
+		radial-gradient(circle, var(--color4) var(--particleSize), #0000 0) 85% 27%,
+		radial-gradient(circle, var(--color5) var(--particleSize), #0000 0) 77% 37%,
+		radial-gradient(circle, var(--color6) var(--particleSize), #0000 0) 60% 7%,
+		/* top right */
+			radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 22%
+			14%,
+		radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 45% 20%,
+		radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 33% 34%,
+		radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 10% 29%,
+		radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 31% 37%,
+		radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 28% 7%,
+		radial-gradient(circle, var(--color1) var(--particleSize), #0000 0) 13% 42%;
+	background-size: var(--initialSize) var(--initialSize);
+	background-repeat: no-repeat;
 }
 
 .firework::before {
-  --x: -50%;
-  --y: -50%;
-  --initialY: -50%;
-  /*   transform: translate(-20vmin, -2vmin) rotate(40deg) scale(1.3) rotateY(40deg); */
-  transform: translate(-50%, -50%) rotate(40deg) scale(1.3) rotateY(40deg);
-  /*   animation: fireworkPseudo 2s infinite; */
+	--x: -50%;
+	--y: -50%;
+	--initialY: -50%;
+	/*   transform: translate(-20vmin, -2vmin) rotate(40deg) scale(1.3) rotateY(40deg); */
+	transform: translate(-50%, -50%) rotate(40deg) scale(1.3) rotateY(40deg);
+	/*   animation: fireworkPseudo 2s infinite; */
 }
 
 .firework::after {
-  --x: -50%;
-  --y: -50%;
-  --initialY: -50%;
-  /*   transform: translate(44vmin, -50%) rotate(170deg) scale(1.15) rotateY(-30deg); */
-  transform: translate(-50%, -50%) rotate(170deg) scale(1.15) rotateY(-30deg);
-  /*   animation: fireworkPseudo 2s infinite; */
+	--x: -50%;
+	--y: -50%;
+	--initialY: -50%;
+	/*   transform: translate(44vmin, -50%) rotate(170deg) scale(1.15) rotateY(-30deg); */
+	transform: translate(-50%, -50%) rotate(170deg) scale(1.15) rotateY(-30deg);
+	/*   animation: fireworkPseudo 2s infinite; */
 }
 
 .firework:nth-child(2) {
-  --x: 30vmin;
+	--x: 30vmin;
 }
 
 .firework:nth-child(2),
 .firework:nth-child(2)::before,
 .firework:nth-child(2)::after {
-  --color1: pink;
-  --color2: violet;
-  --color3: fuchsia;
-  --color4: orchid;
-  --color5: plum;
-  --color6: lavender;
-  --finalSize: 40vmin;
-  left: 30%;
-  top: 60%;
-  animation-delay: -0.25s;
+	--color1: pink;
+	--color2: violet;
+	--color3: fuchsia;
+	--color4: orchid;
+	--color5: plum;
+	--color6: lavender;
+	--finalSize: 40vmin;
+	left: 30%;
+	top: 60%;
+	animation-delay: -0.25s;
 }
 
 .firework:nth-child(3) {
-  --x: -30vmin;
-  --y: -50vmin;
+	--x: -30vmin;
+	--y: -50vmin;
 }
 
 .firework:nth-child(3),
 .firework:nth-child(3)::before,
 .firework:nth-child(3)::after {
-  --color1: cyan;
-  --color2: lightcyan;
-  --color3: lightblue;
-  --color4: PaleTurquoise;
-  --color5: SkyBlue;
-  --color6: lavender;
-  --finalSize: 35vmin;
-  left: 70%;
-  top: 60%;
-  animation-delay: -0.4s;
+	--color1: cyan;
+	--color2: lightcyan;
+	--color3: lightblue;
+	--color4: PaleTurquoise;
+	--color5: SkyBlue;
+	--color6: lavender;
+	--finalSize: 35vmin;
+	left: 70%;
+	top: 60%;
+	animation-delay: -0.4s;
 }
